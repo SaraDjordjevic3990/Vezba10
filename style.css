@@ -1,0 +1,220 @@
+.dropbtn {
+    background-color: rgb(122, 31, 31);
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    width: 150px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    top: 50px;
+    left: 300px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(165, 92, 92);
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(161, 101, 101, 0.2);
+    z-index: 1;
+    border-radius: 15px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color:rgb(187, 0, 0);
+    color: black;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: rgb(207, 7, 7);
+    color: black;
+  }
+  
+  li{
+    list-style: none;
+  }
+  body{
+    background: rgb(238, 237, 178);
+    background: linear-gradient(90deg, rgb(250, 150, 150) 0%, rgba(240, 241, 245, 1) 39%, rgba(227, 227, 227, 1) 55%, rgb(250, 150, 150) 100%);
+  }
+  ul{
+    padding: 0;
+  }
+  
+  /*lista 1*/
+  .list-type1{
+    width:500px;
+    margin:0 auto;
+    }
+    
+    .list-type1 ol{
+    counter-reset: li;
+  
+    list-style: decimal;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    padding: 15px;
+    margin-bottom: 4em;
+    }
+    .list-type1 ol ol{
+    margin: 0 0 0 2em;
+    }
+    
+    .list-type1 a{
+    position: relative;
+    display: block;
+    padding:1em 2em;
+    
+    margin: .5em 0;
+    background: rgb(226, 208, 43);
+    color: black;
+    text-decoration: none;
+   
+    
+    transition: all .2s ease-in-out;
+    }
+    
+    .list-type1 a:hover{
+    background: rgb(255, 193, 193);
+    color: #163091;
+    text-decoration:none;
+   font-size: 17px;
+    transform: 1s;
+    }
+    
+    .list-type1 a:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background:#5975D9;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid gold;
+    text-align: center;
+    font-weight: bold;
+    -moz-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    border-radius: 2em;
+    color:#FFF;
+    }
+  
+    /*Lista 2*/
+  
+    .list-type4{
+      width:450px;
+      margin:0 auto;
+      }
+      
+      .list-type4 ol{
+      counter-reset: li;
+      list-style: none;
+      *list-style: decimal;
+      font-size: 15px;
+      font-family: 'Raleway', sans-serif;
+      padding: 0.5em;
+      margin-bottom: 4em;
+      }
+      .list-type4 a{
+      position: relative;
+      display: block;
+      padding: .4em .4em .4em 2em;
+      *padding: .4em;
+      margin: .5em 0;
+      background: rgb(165, 3, 3);
+      color: rgb(108, 216, 122);
+      text-decoration: none;
+      box-shadow:inset 0.5em 0 green;
+      -webkit-transition: box-shadow 1s; /* For Safari 3.1 to 6.0 */
+      transition: box-shadow 1s;
+      }
+      
+      .list-type4 a:hover{
+      box-shadow:inset 2em 0 rgb(47, 255, 220);
+      padding-left: 35px;
+      transition: 0.8s ;
+    }
+  
+      /* Lista 3*/
+  
+      .list-type5{
+        width:410px;
+        margin:0 auto;
+        }
+        .list-type5 ol {
+        list-style-type: none;
+        list-style-type: decimal;
+        margin: 0;
+        margin-left: 1em;
+        padding: 0;
+        counter-reset: li-counter;
+        }
+        .list-type5 ol li{
+        position: relative;
+        margin-bottom: 1.5em;
+        padding: 0.5em;
+        background-color: black;
+        padding-left: 50px;
+        }
+        
+        .list-type5 a{
+        text-decoration:none;
+        color:#8ae087;
+        font-size:15px;
+        font-family: 'Raleway', sans-serif;
+        }
+        
+        .list-type5 li:hover{
+        box-shadow:inset -1em 0 rgb(0, 255, 255);
+        -webkit-transition: box-shadow 0.5s; /* For Safari 3.1 to 6.0 */
+        transition: box-shadow 0.5s;
+        padding-right: 40px;
+        transition: 0.7s;
+        font-size: 13px;
+        }
+        
+        .list-type5 ol li:before {
+        position: absolute;
+        top: -0.3em;
+        left: -0.5em;
+        width: 1.8em;
+        height: 1.2em;
+        font-size: 2em;
+        line-height: 1.2;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        background-color:rgb(228, 22, 22);
+        transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+        -webkit-transform: rotate(-20deg);
+        z-index: 99;
+        overflow: hidden;
+        content: counter(li-counter);
+        counter-increment: li-counter;
+        }
+  
+        .list-types{
+          position: relative;
+          top: 130px;
+          
+        }
